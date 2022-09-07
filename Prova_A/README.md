@@ -12,7 +12,7 @@ Se a quantidade de parcelas for até 60 (inclusive), o juro a ser aplicado será
 
 Se a quantidade de parcelas for até 96 (inclusive), o juro a ser aplicado será de 30% (30/100) sob o preço do caminhão.
 
-Se a quantidade de parcelas for acima de 120, o juro a ser aplicado será de 45% (45/100) sob o preço do caminhão.
+Se a quantidade de parcelas for acima de 96, o juro a ser aplicado será de 45% (45/100) sob o preço do caminhão.
 
 Apresente o preço final do caminhão, considerando o juro estabelecido para a quantidade de parcelas.
 
@@ -62,10 +62,10 @@ DICA: Use PR para Programação, DW para Desenvolvimento Web, BD para Banco de D
 ### **E05: Aplicar desconto no preço do veículo**
 Peça para o vendedor informar o valor total do veículo e também informar o Ano do Veículo, considerando o seguinte cenário:
 
-Se o ano for inferior a 2010 (inclusive), o preço do veículo terá 3% (3/100) de desconto.
+Se o ano for igual a 2022, o preço do veículo terá 3% (3/100) de desconto.
 
-Se o ano for interior a 2020 (inclusive), o preço do veículo terá 5% (5/100) de desconto.
+Se o ano for igual a 2021 (inclusive), o preço do veículo terá 5% (5/100) de desconto.
 
-Se o ano for superior a 2020, o preço do veículo terá 7% (7/100) de desconto.
-    
+Para todos os outros anos (opção default), o preço do veículo terá 7% (7/100) de desconto.    
+
 Calcule e apresente o preço final do Veículo de acordo com o seu respectivo ano.
