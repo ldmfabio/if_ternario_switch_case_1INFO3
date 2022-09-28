@@ -9,11 +9,20 @@
     //Apresente a mensagem final, de acordo com o cenário descrito acima.
 
     //ENTRADA
-
+    const nota1 = Number(prompt(`Informe nota da turma 1:`));
+    const nota2 = Number(prompt(`Informe nota da turma 2:`));
+    const nota3 = Number(prompt(`Informe nota da turma 3:`));
+    const nota4 = Number(prompt(`Informe nota da turma 4:`));
+    const nota5 = Number(prompt(`Informe nota da turma 5:`));
 
     //PROCESSAMENTO
-
+    const somaDasNotas = nota1 + nota2 + nota3 + nota4 + nota5;
+    const media = somaDasNotas / 5;
+    let resposta = "";
+    (media <= 4) ? resposta = "+- 50 alunos reprovados"
+    : (media <= 7) ? resposta = "+- 20 alunos reprovados"
+    : resposta = "+- 8 alunos reprovados";
 
     //SAÍDA
-
+    document.write(resposta);
 </script>

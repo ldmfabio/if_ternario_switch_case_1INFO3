@@ -11,11 +11,21 @@
     //Calcule os pontos e apresente o nível de experiência do Profissional.
 
     //ENTRADA
-
+    const anosExpProf = Number(prompt(`Informe quantos anos de experiência possui:`));
+    const cursoGraduacao = prompt(`Possui curso de graduação? Sim-S | Não-N`).toUpperCase();
+    const cursoPosGraduacao = prompt(`Possui curso de pós-graduação? Sim-S | Não-N`).toUpperCase();
+    const voluntariado = prompt(`Realiza voluntariado? Sim-S | Não-N`).toUpperCase();
 
     //PROCESSAMENTO
+    let pontos = anosExpProf * 1.5;
+    if (cursoGraduacao === "S") pontos = pontos + 10;
+    if (cursoPosGraduacao === "S") pontos = pontos + 15;
+    if (voluntariado === "S") pontos = pontos + 10;
 
+    let resultado;
+    (pontos <= 35) ? resultado = "EM EVOLUÇÃO"
+    : resultado = "VETERANO";
 
     //SAÍDA
-
+    document.write(resultado);
 </script>

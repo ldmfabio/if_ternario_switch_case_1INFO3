@@ -10,11 +10,15 @@
     //Apresente o preço final do caminhão, considerando o juro estabelecido para a quantidade de parcelas.
 
     //ENTRADA
-
+    const precoCaminhao = Number(prompt(`Informe o preço do caminhão:`));
+    const parcelas = parseInt(prompt(`Quantidade de parcelas:`));
 
     //PROCESSAMENTO
-
+    let precoFinal;
+    (parcelas <= 60) ? precoFinal = precoCaminhao + (precoCaminhao * 18 / 100)
+    : (parcelas <= 96) ? precoFinal = precoCaminhao + (precoCaminhao * 30 / 100)
+    : precoFinal = precoCaminhao + (precoCaminhao * 45 / 100);
 
     //SAÍDA
-
+    document.write(`O preço final do caminhão é de R$ ${precoFinal.toFixed(2)}`);
 </script>

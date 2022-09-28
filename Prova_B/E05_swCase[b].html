@@ -11,11 +11,23 @@
     //DICA: Use M para Manhã, T para Tarde, N para Noite.
 
     //ENTRADA
-
+    const turno = prompt(`Qual turno trabalha? (Manhã-M | Tarde-T | Noite-N)`).toUpperCase();
+    const recebeHora = Number(prompt(`Quanto você recebe por hora?`));
 
     //PROCESSAMENTO
-
+    let resposta;
+    switch (turno) {
+        case "M":
+            resposta = recebeHora + (recebeHora * 2 / 100);
+            break;
+        case "T":
+            resposta = recebeHora + (recebeHora * 4 / 100);
+            break;
+        case "N":
+            resposta = recebeHora + (recebeHora * 7 / 100);
+            break;
+    }
 
     //SAÍDA
-
+    document.write(`O valor pago por hora será de ${resposta}`);
 </script>

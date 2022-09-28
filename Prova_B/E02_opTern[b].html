@@ -11,11 +11,15 @@
     //Apresente o valor final a ser pago pela residência, considerando o juro estabelecido para a quantidade de meses de financiamento.
 
     //ENTRADA
-
+    const valorResidencia = Number(prompt(`Informe valor da residência:`));
+    const meses = Number(prompt(`Em quantos meses pagará o financiamento?`));
 
     //PROCESSAMENTO
-
+    let valorFinal;
+    (meses <= 120) ? valorFinal = valorResidencia + (valorResidencia * 55 / 100)
+    : (meses <= 240) ? valorFinal = valorResidencia + (valorResidencia * 65 / 100)
+    : valorFinal = valorResidencia + (valorResidencia * 85 / 100);
 
     //SAÍDA
-
+    document.write(`O valor final da residência é de R$ ${valorFinal.toFixed(2)}`);
 </script>

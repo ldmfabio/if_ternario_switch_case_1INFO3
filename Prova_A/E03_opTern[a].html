@@ -11,11 +11,16 @@
     //Calcule os pontos e apresente o nível de dificuldade da escrita do texto.
 
     //ENTRADA
-
+    const paginas = Number(prompt(`Informe a quantidade de páginas:`));
+    const capitulos = Number(prompt(`Quantos capítulos o texto possui?`));
+    const subcapitulos = Number(prompt(`Quantos subcapítulos o texto possui?`));
 
     //PROCESSAMENTO
-
+    let pontos = (paginas * 3) + (capitulos * 5) + (subcapitulos * 8);
+    let resposta;
+    (pontos <= 40) ? resposta = "MEDIANO"
+    : resposta = "COMPLEXO";
 
     //SAÍDA
-
+    document.write(resposta);
 </script>

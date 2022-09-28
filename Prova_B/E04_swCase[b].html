@@ -11,11 +11,25 @@
     //DICA: Use PF para Pão Francês, BC para Cuca, SO para Sonho.
 
     //ENTRADA
-
+    const compra = prompt(`O que deseja comprar? (Pão Frances-PF | Bolo Cuca-BC | Sonho-SO)`).toUpperCase();
 
     //PROCESSAMENTO
-
+    let resposta;
+    switch (compra) {
+        case "PF":
+            resposta = "Preço do Kg: R$ 5,00!";
+            break;
+        case "BC":
+            resposta = "Preço do pedaço: R$ 15,00!";
+            break;
+        case "SO":
+            resposta = "Preço da unidade: R$ 1,50!";
+            break;
+        default:
+            resposta = "Opção de compra inválida!";
+            break;
+    }
 
     //SAÍDA
-
+    document.write(resposta);
 </script>
